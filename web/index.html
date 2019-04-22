@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./js/libs/flexible.js">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <p class="add active">收入</p>
+            <p class="curt">支出</p>
+        </header>
+        <main class="main">
+            <form action="">
+                <ul>
+                    <li>
+
+                        <p>金额</p><input type="number" class="money">
+
+                    </li>
+                    <li>
+
+                        <p>备注</p><input type="text" class="info">
+                    </li>
+                    <li>
+                        <p>分类</p>
+                       <input type="text" class="fl">
+                    </li>
+                    <li>
+                        <p>分类</p>
+                         <input type="text" class="people">
+                    </li>
+                    <li>
+
+                    </li>
+                    <li>
+                        <input type="button" class="btn" value="确定">
+                    </li>
+                </ul>
+            </form>
+            <section class="detail">
+                <ul>
+                    <li class="date">日期</li>
+                    <li class="lb">类别</li>
+                    <li class="my">金额</li>
+                    <li class="peo">成员</li>
+                    <li class="det">备注</li>
+                </ul>
+                <ul>
+                    <li class="date">日期</li>
+                    <li class="lb">类别</li>
+                    <li class="my">金额</li>
+                    <li class="peo">成员</li>
+                    <li class="det">备注</li>
+                </ul>
+            </section>
+        </main>
+
+    </div>
+    <script src="js/libs/require.js"></script>
+    <script>
+        require(["./js/main.js"], () => {
+            require(["index"])
+        })
+    </script>
+</body>
+
+</html>
